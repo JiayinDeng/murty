@@ -5,6 +5,8 @@ mgen = Murty(np.eye(2))
 
 ok, cost, sol = mgen.draw()
 
+print(ok, cost, sol)
+
 assert ok
 assert cost == 0.
 assert (sol == np.array([1, 0])).all()
